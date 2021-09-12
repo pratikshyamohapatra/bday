@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC');
+
+body {
+	font-family: 'Indie Flower', cursive !important;
+  background-color: #fafafa;
+	margin: 0px;
+  font-weight: bold;
+	padding: 0px;
+}
+
+::selection {
+	background: transparent;
+}
+
+h4 {
+	font-size: 26px;
+	line-height: 1px;
+	font-family: 'Amatic SC', cursive !important;
+}
+
+.color1{color:#333}/*MOUNTAIN MEADOW*/
+.color2{color:slateblue/*TALL POPPY*/}
+
+
+.card {
+	color: #333; /*SHERPA BLUE*/
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 300px;
+	height:400px;
+	background: #e0e1dc;
+	transform-style: preserve-3d;
+	transform: translate(-50%,-50%) perspective(2000px);
+	box-shadow: 0px 15px 15px #333;
+	transition: 1s;
+}
+
+.card:hover {
+	transform: translate(-50%,-50%) perspective(2000px) rotate(15deg) scale(1.3);
+	box-shadow: 0px 35px 35px #555;}
+ 
+
+.card .imgBox {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	transform-origin: left;
+	transition: .7s;
+}
+
+.card .bark {
+	position: absolute;
+	background: #e0e1dc;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	transition: .7s;
+}
+
+.card .imgBox  {
+  background-image: url("https://1.bp.blogspot.com/-Ofnz-XV12Gw/YQ06lmd5MRI/AAAAAAAAAHY/OhOKkvBfXAYX3d-kt6pj8I9LfWXGegZ7QCNcBGAsYHQ/s0/DSC_0026-1.JPG");
+  background-size: cover;
+	width: 100%;
+ }
+.imgBox{
+   display: grid;
+  place-content: center;
+  color: #fff;
+  font-size: 18px;
+  text-shadow: 0px 3px 6px #333;
+}
+.card:hover .imgBox {
+	transform: rotateY(-135deg);
+}
+
+.card:hover .bark {
+	opacity: 1;
+	transition: .6s;
+  box-shadow: 0px 35px 35px #555;
+}
+
+.card .details {
+	position: absolute;
+	top: 0;
+	left: 0;
+	box-sizing: border-box;
+	padding: 0 0 0 10px;
+	z-index: -1;
+	margin-top: 70px;
+}
+
+.card .details p {
+	font-size: 15px;
+	line-height: 5px;
+	transform: rotate(-10deg);
+	padding: 0 0 0 20px;
+}
+
+.card .details h4 {
+	text-align: center;
+}
+
+.text-right {
+	text-align: right;
+}
+  </style>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.js"
+    integrity="sha512-E378bwaeZf1nwXeJGIwTB58A5gPt5jFU3u6aTGja4ZdRFJeo/N/REKnBgNZOZlH6JdnOPO98vg2AnSGaNfCMFQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Rampart+One&family=Secular+One&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+
+<body>
+	<div class="card">
+		<div class="imgBox">
+      <h1>Dear Lisi HBDTY</h1>
+			<div class="bark"></div>
+ 		</div>
+		<div class="details">
+			<h4 class="color1">You're not a friend, Even More</h2>
+			<h4 class="color2 margin">"HAPPY BIRTHDAY Lisi"</h3>
+			<p>Dear Lisi,</p>
+ 			
+			<p>I hate your color choice for website,</p>
+			<p>Practically you did it, white with black,</p>
+			<p>Sometimes i got rough on you,</p>
+			<p>You managed to be calm everytime,</p>
+			<p>I always admire your effort,</p>
+      <p>I wish you get your goals as fast as,</p>
+      <p>A rolling 5 rupee coin!!! :)</p>
+			<p class="text-right">Happy Birthday, LISI</p>
+			<p class="text-right">Yours, Cat Lover</p>
+		</div>
+	</div>
+  
+</body>
+
+</html>
